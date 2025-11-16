@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Woman's Body - USE GRACI STORE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Inter:wght@400;500&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'hot-pink': '#FF1493',
+              'delicate-gray': '#7A7A7A',
+              'light-gray': '#F5F5F5',
+              'burnt-rose': '#C25A77',
+            },
+            fontFamily: {
+              'montserrat': ['Montserrat', 'sans-serif'],
+              'inter': ['Inter', 'sans-serif'],
+              'poppins': ['Poppins', 'sans-serif'],
+            },
+            keyframes: {
+              glow: {
+                '0%, 100%': { boxShadow: '0 0 5px rgba(255, 20, 147, 0.5)' },
+                '50%': { boxShadow: '0 0 20px rgba(255, 20, 147, 0.8)' },
+              }
+            },
+            animation: {
+              glow: 'glow 3s ease-in-out infinite',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        transition: background-color 0.3s ease;
+      }
+      .light body {
+        background-color: #fff;
+        background-image: radial-gradient(circle at 100% 0%, rgba(255, 20, 147, 0.05), transparent 40%);
+      }
+      .dark body {
+        background-color: #0d0d0d;
+        background-image: radial-gradient(circle at 100% 0%, rgba(255, 20, 147, 0.1), transparent 50%);
+      }
+      .text-shadow-hot-pink {
+        text-shadow: 0px 2px 4px rgba(255, 20, 147, 0.25);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
